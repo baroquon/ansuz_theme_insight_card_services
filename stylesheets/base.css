@@ -1,0 +1,309 @@
+html {
+  background: #f3f2f1; }
+
+body {
+  font-family: "Lucida Sans Unicode","Lucida Grande", helvetica, Sans-Serif, sans;
+  text-align: center; }
+
+a {
+  color: #A0000E;
+  text-decoration: underline; }
+  a:hover {
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  text-align: left; }
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #444;
+  background: #ddd9d6 url(/images/background.gif) repeat-x top left; }
+  body .flash {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 0 10px; }
+    body .flash.notice {
+      color: #444;
+      background-color: #FAFDDD;
+      border-bottom: 2px solid #FFF2B3; }
+    body .flash.error {
+      color: #900;
+      background-color: #FAFDDD;
+      border-bottom: 1px solid #AAAAAA; }
+  body .header, body .content-wrapper {
+    text-align: left;
+    width: 950px;
+    margin: 0 auto;
+    position: relative; }
+    body .header .important-notice,     body .content-wrapper .important-notice {
+      background-color: #FFF2B3;
+      width: 450px;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #E0E0E0;
+      font-weight: 400; }
+  body .header {
+    padding: 20px 0 10px; }
+    body .header h1 {
+      width: 441px;
+      height: 91px;
+      background: transparent url(/images/logo.png) no-repeat top left;
+      margin: 0; }
+      body .header h1 span {
+        display: none; }
+  body .container {
+    margin-bottom: 30px; }
+    body .container .content-wrapper {
+      background: #F4F4F4 none repeat scroll 0 0;
+      border: 1px solid #E0E0E0;
+      margin-bottom: 10px; }
+      body .container .content-wrapper .main-content {
+        margin: 10px;
+        text-align: center; }
+        body .container .content-wrapper .main-content h2 {
+          margin-bottom: 10px; }
+
+#sessions .container .content-wrapper {
+  padding: 40px 7px; }
+
+.module {
+  background: #ddd9d6 url(/images/background.gif) repeat-x bottom left;
+  color: #444;
+  padding: 5px;
+  text-align: left; }
+
+.front-nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 800px;
+  padding: 0; }
+  .front-nav ul li {
+    display: block;
+    float: left;
+    width: 398px;
+    height: 200px;
+    text-align: center;
+    border-top: 1px solid #888;
+    border-left: 1px solid #888; }
+    .front-nav ul li.logout {
+      display: none; }
+    .front-nav ul li a {
+      display: block;
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      font-size: 1.7em;
+      text-decoration: none;
+      background: #ddd9d6 url(/images/background.gif) repeat-x bottom left; }
+      .front-nav ul li a:hover {
+        background: #ddd9d6 url(/images/background.gif) repeat-x top left; }
+      .front-nav ul li a span {
+        position: relative;
+        top: 80px; }
+
+.nav {
+  width: 950px;
+  margin: 0 auto;
+  text-align: left; }
+  .nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: left; }
+    .nav ul li {
+      display: block;
+      float: left;
+      width: auto;
+      text-align: center;
+      text-align: center;
+      background: #ddd9d6 url(/images/background.gif) repeat-x top left;
+      font-size: .8em;
+      height: 25px; }
+      .nav ul li a {
+        display: block;
+        text-decoration: none;
+        background: #ddd9d6 url(/images/background.gif) repeat-x bottom left; }
+        .nav ul li a:hover {
+          background: #ddd9d6 url(/images/background.gif) repeat-x top left; }
+      .nav ul li span {
+        padding: 5px 15px;
+        display: block; }
+
+#login-container {
+  width: 300px;
+  margin: 0 auto; }
+  #login-container h2, #login-container label, #login-container input {
+    margin-left: 50px; }
+  #login-container input:focus {
+    border-color: #A0000E; }
+  #login-container input.button {
+    font-size: 1.2em; }
+    #login-container input.button:hover {
+      color: #A0000E; }
+
+.clear {
+  clear: both; }
+
+.form-container {
+  width: 710px;
+  margin: 0 auto; }
+  .form-container div.module {
+    margin: 10px 0;
+    background: #ddd;
+    border: 0; }
+  .form-container p {
+    margin-left: 10px;
+    margin-bottom: 10px; }
+    .form-container p label {
+      display: block;
+      width: 200px; }
+    .form-container p input {
+      display: block;
+      width: 300px; }
+    .form-container p.first-name, .form-container p.last-name, .form-container p.city, .form-container p.ssn, .form-container p.dob {
+      float: left;
+      width: 320px; }
+    .form-container p.address {
+      width: 640px; }
+      .form-container p.address input {
+        width: 630px; }
+    .form-container p.postal-region, .form-container p.postal-code {
+      width: 150px;
+      float: left; }
+      .form-container p.postal-region input,       .form-container p.postal-code input {
+        width: 140px; }
+
+#load-funds, #balance-inquirey, #update-card-holder, #admin-find-a-card {
+  width: 340px; }
+  #load-funds .module,   #balance-inquirey .module,   #update-card-holder .module,   #admin-find-a-card .module {
+    text-align: center; }
+    #load-funds .module p,     #balance-inquirey .module p,     #update-card-holder .module p,     #admin-find-a-card .module p {
+      text-align: left; }
+
+#date-select-filter {
+  width: 820px;
+  text-align: center; }
+  #date-select-filter .module {
+    text-align: center; }
+    #date-select-filter .module label {
+      display: inline; }
+    #date-select-filter .module input {
+      display: inline; }
+    #date-select-filter .module img {
+      margin-right: 20px; }
+
+#inventory {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center; }
+
+table.subdued {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto; }
+  table.subdued tr.even {
+    background: #E0E0E0 none repeat scroll 0 0; }
+  table.subdued th {
+    border-bottom: 1px solid #444;
+    padding: 5px 5px 0; }
+  table.subdued td {
+    padding: 10px 5px;
+    text-align: center; }
+
+span.balance {
+  display: block;
+  text-align: center; }
+
+tr.success {
+  color: #00aa00; }
+
+tr.failure {
+  color: #ff0000; }
+
+.error-page {
+  text-align: center;
+  background: #333; }
+  .error-page .no-dice {
+    margin: 20px auto; }
+
+table.journal {
+  width: 100% !important; }
+  table.journal tr.even {
+    background: #E0E0E0 none repeat scroll 0 0; }
+  table.journal tr td {
+    vertical-align: top;
+    font-size: .8em; }
+
+.footer {
+  padding: 10px 0 20px;
+  background: #DDD9D6 url(/images/background.gif) repeat-x scroll left top;
+  border-top: 2px solid #ccc;
+  text-align: center; }
+  .footer .content-wrapper {
+    text-align: center; }
+
+.valid-css {
+  position: absolute;
+  right: 0; }
+
+.admin-top {
+  width: 100%;
+  padding: 10px;
+  background: #E0E0E0;
+  margin-left: -10px; }
+  .admin-top .admin-toolbar {
+    margin: 0;
+    padding: 0;
+    clear: both; }
+    .admin-top .admin-toolbar li {
+      list-style-type: none;
+      display: block;
+      float: left;
+      width: auto;
+      margin-bottom: 5px; }
+      .admin-top .admin-toolbar li a {
+        background: transparent url(/images/toolbar-bg.png) repeat scroll 0 0;
+        border-bottom-color: #ddd;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-right-color: #eee;
+        border-right-style: solid;
+        border-right-width: 2px;
+        color: #333;
+        padding: 6px 10px;
+        text-decoration: none; }
+        .admin-top .admin-toolbar li a:hover {
+          background: transparent url(/images/toolbar-bg.png) repeat scroll left center; }
+        .admin-top .admin-toolbar li a img {
+          border: 0;
+          margin: 0 5px 0 0; }
+
+div.store-details-sheet {
+  background: #FFFFDD none repeat scroll 0 50%;
+  border: 1px solid #D7D7D7;
+  color: #484848;
+  margin: 6px 0;
+  padding: 6px; }
+  div.store-details-sheet .store-info {
+    font-size: 90%;
+    text-align: left;
+    border-collapse: separate;
+    width: 100%; }
+    div.store-details-sheet .store-info td {
+      font-weight: 400;
+      padding: 5px 15px 5px;
+      vertical-align: top; }
+    div.store-details-sheet .store-info th {
+      font-weight: 600;
+      vertical-align: top;
+      width: 33%; }
+  div.store-details-sheet .contact-info {
+    text-align: left; }

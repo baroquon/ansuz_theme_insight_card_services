@@ -1,0 +1,58 @@
+<!-- Generated Using Ansuz CMS -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title><%= title_helper %></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="description"  content="Insight Card Services" />
+  	<meta name="keywords"     content="Insight, cards, services, buisiness, ruby, ruby on rails, web development, birmingham, alabama, programmers, startup software" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon"          href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <%= manage_ansuz_stylesheets %>
+    <%= manage_ansuz_javascripts %>
+	  <%= theme_stylesheet_link_tag 'ansuz_theme_insight_card_services', 'base' -%>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='header'>
+        <a href ='/'>
+          <h1>
+            <span>
+              Insight Card Services
+            </span>
+          </h1>
+        </a>
+        <div class='important-notice'>
+          Insight Cards Services will never call you to complete a test transaction over the phone. All transactions must be cash in hand only.
+        </div>
+      </div>
+      
+      <div class='container'>
+        <div class='nav'>
+          <%= render :partial => 'page/top_nav' %>
+        </div>
+        <div class='clear' />
+        <div class='content-wrapper'>
+          <div class='main-content'>
+            <%= render :partial => "page/breadcrumb" if (@page && (@page != @root)) -%>
+            <%= @content_for_layout -%>
+            <%= render :partial => "page/child_nav" if (@page && (!@page.children.empty?)) -%>
+          </div>
+        </div>
+      </div>
+      <%= render :partial => "page/footer" -%>
+    </div>
+    <script type='text/javascript'>
+      jQuery(document).ready(function() { 
+        // setup scrolling with this one JavaScript call 
+        jQuery("div.scrollable").scrollable({ 
+          // scrolling configuration 
+          horizontal:true,  
+          size:1
+        });  
+      });
+    </script>
+  </body>
+</html>
