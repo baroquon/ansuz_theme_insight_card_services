@@ -284,6 +284,6 @@ div.store-details-sheet {
 #navigation h3{
   display:none;
 }
-.breadcrumb{
+#breadcrumb{
   text-align:left;
 }
